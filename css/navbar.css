@@ -28,6 +28,10 @@ header{
     margin-left: 10px;
 }
 
+.logo h2:hover{
+    color: white;
+}
+
 .logo img{
     height: 50px;
 }
