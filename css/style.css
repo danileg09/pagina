@@ -21,16 +21,29 @@ a{
     height: 80vh;
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #content-img{
+    width: 40vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column;
+}
+
+
+@media(max-width: 700px){
+    #content-img{
+        margin-top: 15vh;
+        width: 40vw;
+    }
 }
 
 .content-img{
     display: flex;
-    border-radius: 5%;
+    border-radius: 6%;
     height: 60vh;
     width: 40vw;
 }
@@ -40,40 +53,70 @@ a{
 }
 
 #content-text{
-    margin: 5px;
-    background-color: yellowgreen;
-    height: 60vh;
-    width: 35vw;
-    border-radius: 5%;
+    width: 50vw;
+    height: 80vh;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#content-text h1{
-    font-size: 2.6rem;
-    margin-top: 5vh;
-    text-align: center;
-}
-
-@media (max-width:745px){
+@media(max-width: 1023px){
     #content-text h1{
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 }
 
+@media(max-width: 945px){
+    #content-text h1{
+        margin-top: 5vh;
+        font-size: 1.5;
+    }
+    #content-text p{
+        margin-bottom: 5vh;
+    }
+}
+
+@media (max-width:871px){
+    #content-text h1{
+        font-size: 1.4rem;
+    }
+
+    #content-text p{
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:671px){
+    #content-text
+}
+
+.content-text h1{
+    font-size: 2.6rem;
+    margin: 15px 15px;
+    text-align: center;
+}
+
+.content-text p{
+    font-size: 1.4rem;
+}
+
+
 .content-text{
     font-size: 1.6rem;
-    margin: 20px;
-    color: red;
-    font-family: 'Work Sans',sans-serif;
-    font-size: 20px;
-    line-height: 35px;
-    text-align: center;
+    display: flex;
+    width: 30vw;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: yellowgreen;
+    border-radius: 6%;
 }
 
 @media (max-width: 850px){
     .content-text{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -83,7 +126,7 @@ a{
     }
 }
 
-#content-text:hover{
+.content-text:hover{
     border: 2px solid blue;
 }
 
@@ -110,16 +153,15 @@ a{
 /*Footer*/
 
 footer{
-    width: 100vw;
+    font-size: 1.2rem;
     color: white;
     text-align: center;
     background-color: black;
     padding: 30px;
-    font-size: 14px;
 }
 
 footer a{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: white;
 }
 
