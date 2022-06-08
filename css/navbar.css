@@ -5,27 +5,48 @@ body{
 }
 
 a{
+    font-size: 62%;
     text-decoration: none;
     color: black;
 }
 
 header{
     display: flex;
-    min-height: 70px;
+    min-height: 70vh;
     background-color: blueviolet;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
+@media(max-width:701px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
 .logo{
     display: flex;
     align-items: center;
     padding-left: 10px;
 }
+@media(max-width:286px){
+    .logo {
+        flex-direction: column;
+    }
+}
 
 .logo h2{
+    font-size: 2rem;
     margin-left: 10px;
+}
+@media(max-width:236px){
+    .logo h2{
+        font-size: 1rem;
+    }
 }
 
 .logo h2:hover{
@@ -37,6 +58,7 @@ header{
 }
 
 nav a{
+    font-size: 1.2rem;
     font-weight: 600;
     padding: 10px;
 }

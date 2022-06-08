@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: sans-serif;   
+    font-family: sans-serif;  
 }
 
 a{
@@ -13,12 +13,19 @@ a{
 }
 
 .main-login{
+    display: flex;
     width: 100vw;
-    height: 80vh;
+    min-height: 80vh;
     background-color: #201b2c;
     display: flex;
     justify-content: center; /*Eixo-x*/
     align-items: center; /*Eixo-Y*/
+}
+
+@media(max-width:720px){
+    .main-login{
+        flex-direction: column;
+    }
 }
 
 .left-login{
@@ -38,12 +45,24 @@ a{
     width: 35vw;
 }
 
+@media(max-width:720px){
+    .left-login-image{
+        min-width: 40vh;
+    }
+}
+
 .right-login{
     width: 50vw;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media(max-width:720px){
+    .card-login{
+        min-width: 50vw;
+    }
 }
 
 .card-login{
