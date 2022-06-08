@@ -143,10 +143,10 @@ footer{
     text-align: center;
     background-color: black;
     padding: 30px;
-    font-size: 14px;
 }
 
 footer a{
+    font-size: 1.2rem;
     color: white;
 }
 
